@@ -3,8 +3,7 @@
 
 .footer,
 .footer .container,
-.footer__content,
-.socmed-link {
+.footer__content {
 	display: flex;
 	flex-direction: column;
 }
@@ -36,4 +35,14 @@
 .socmed-links {
 	display: flex;
 	gap: func.em(16);
+}
+
+.socmed-link {
+	display: inline-flex;
+}
+
+@media (min-width: 48em) {
+	.footer__content {
+		gap: func.em(30, var.$font-size-primary);
+	}
 }
