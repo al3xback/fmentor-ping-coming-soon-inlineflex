@@ -1,9 +1,15 @@
-footer,
-footer .container {
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+.footer,
+.footer .container,
+.footer__content,
+.socmed-link {
 	display: flex;
+	flex-direction: column;
 }
 
-footer {
+.footer {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -13,11 +19,21 @@ footer {
 	font-size: 0.8em;
 }
 
-footer .container,
-footer p {
-	flex: auto;
+.footer .container {
+	gap: func.em(16, var.$font-size-primary);
 }
 
-footer p {
+.footer p {
 	font-size: inherit;
+}
+
+.footer__content {
+	align-items: center;
+	gap: func.em(40, var.$font-size-primary);
+	color: var.$color-gray;
+}
+
+.socmed-links {
+	display: flex;
+	gap: func.em(16);
 }
