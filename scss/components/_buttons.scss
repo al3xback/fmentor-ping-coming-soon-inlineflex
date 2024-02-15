@@ -39,8 +39,8 @@
 }
 
 .btn--icon {
-	width: func.em(48, var.$font-size-primary);
-	height: func.em(48, var.$font-size-primary);
+	width: func.em(50, var.$font-size-primary);
+	height: func.em(50, var.$font-size-primary);
 	padding: func.em(8, var.$font-size-primary);
 	background-color: var.$color-white;
 	border-color: var.$color-gray-lighter;
@@ -55,14 +55,14 @@
 }
 
 .btn--icon svg {
-	height: func.em(21, var.$font-size-primary);
+	height: func.em(22, var.$font-size-primary);
 	fill: currentColor;
 }
 
 @media (min-width: 48em) {
 	.btn--icon {
-		width: func.em(40, var.$font-size-primary);
-		height: func.em(40, var.$font-size-primary);
+		width: func.em(42, var.$font-size-primary);
+		height: func.em(42, var.$font-size-primary);
 		padding: func.em(6, var.$font-size-primary);
 	}
 
